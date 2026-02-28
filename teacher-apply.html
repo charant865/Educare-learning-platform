@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join as Teacher - Educare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link brand-logo"><img src="logo-educare-custom.svg" alt="EduCare logo" class="logo-brand"></a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Learn</a></li>
+                <li><a href="donation.html">Donate</a></li>
+                <li><a href="success-stories.html">Stories</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="teacher-apply.html" class="active">Teach</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="teacher-hero reveal">
+            <div class="teacher-copy">
+                <p class="eyebrow">Join as Teacher</p>
+                <h1>Teach Students for Free and Create Real Impact</h1>
+                <p class="hero-text">Apply as a mentor by sharing your details. All teacher applications are reviewed by admin before approval. Top-performing teachers can receive recognition and paid opportunities.</p>
+                <div class="hero-ribbon">
+                    <span>Admin Approval Required</span>
+                    <span>Top Performance Rewards</span>
+                    <span>Social Impact Teaching</span>
+                </div>
+            </div>
+            <div class="teacher-side">
+                <h3>Teacher Eligibility</h3>
+                <ul>
+                    <li>Strong subject knowledge (school/UG/PG)</li>
+                    <li>Good communication and mentoring skills</li>
+                    <li>Commitment to free education mission</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="teacher-apply reveal">
+            <h2>Teacher Application Form</h2>
+            <form class="teacher-form">
+                <input type="text" id="teacherName" placeholder="Full Name" required>
+                <input type="email" id="teacherEmail" placeholder="Email Address" required>
+                <input type="text" id="teacherPhone" placeholder="Phone Number" required>
+                <input type="text" id="teacherQualification" placeholder="Highest Qualification" required>
+                <input type="text" id="teacherExperience" placeholder="Teaching Experience (Years)" required>
+
+                <select id="teacherSubject" required>
+                    <option value="">Select Subject</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Geography">Geography</option>
+                    <option value="Science">Science</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="Research and Academic Writing">Research and Academic Writing</option>
+                </select>
+
+                <textarea id="teacherWhy" placeholder="Why do you want to teach on Educare?" rows="4" required></textarea>
+                <button type="submit">Submit for Admin Approval</button>
+            </form>
+            <p class="admin-link-note">Admin can review applications here: <a href="admin-review.html">Open Admin Review</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Educare. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="success-stories.html">Success Stories</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

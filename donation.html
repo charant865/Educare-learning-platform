@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Educare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link brand-logo"><img src="logo-educare-custom.svg" alt="EduCare logo" class="logo-brand"></a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="donation.html" class="active">Donate</a></li>
+                <li><a href="success-stories.html">Stories</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero reveal">
+            <div class="hero-content">
+                <p class="eyebrow">Support Education</p>
+                <h1>Help Poor Students Continue Their Education Journey</h1>
+                <p class="hero-text">Your donation supports students who dream of studying abroad, need help for higher studies, and require books and stationery for learning.</p>
+                <div class="hero-stats">
+                    <div><strong>100%</strong><span>Used for student support</span></div>
+                    <div><strong>500+</strong><span>Students helped</span></div>
+                    <div><strong>24/7</strong><span>Donation access</span></div>
+                </div>
+            </div>
+
+            <div class="hero-panel donation-panel">
+                <h3>Make a Donation</h3>
+                <form class="donation-form">
+                    <input type="text" id="donorName" placeholder="Your Name" required>
+                    <input type="email" id="donorEmail" placeholder="Your Email" required>
+                    <input type="number" id="donationAmount" placeholder="Donation Amount (INR)" min="1" required>
+
+                    <label for="donationPurpose">Choose Purpose</label>
+                    <select id="donationPurpose" required>
+                        <option value="">Select purpose</option>
+                        <option value="Abroad Studies">Support abroad studies</option>
+                        <option value="Higher Education">Support higher education fees</option>
+                        <option value="Books and Stationery">Books and stationery</option>
+                        <option value="General Student Fund">General student fund</option>
+                    </select>
+
+                    <button type="submit" class="btn btn-panel">Donate Now</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="options reveal">
+            <h2>How Your Donation Helps</h2>
+            <div class="option-grid">
+                <article class="option-card">
+                    <h3>Study Abroad Dreams</h3>
+                    <p>Financial aid for deserving students to pursue international education opportunities.</p>
+                </article>
+                <article class="option-card">
+                    <h3>Higher Studies</h3>
+                    <p>Support tuition and exam fees for students continuing college and postgraduate education.</p>
+                </article>
+                <article class="option-card">
+                    <h3>Books & Stationery</h3>
+                    <p>Provide notebooks, textbooks, and essential learning materials for underprivileged learners.</p>
+                </article>
+                <article class="option-card">
+                    <h3>Transparent Use</h3>
+                    <p>Every contribution is directed to student-focused educational needs and welfare.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Educare. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="success-stories.html">Success Stories</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

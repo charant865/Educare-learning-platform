@@ -1,0 +1,22 @@
+<svg width="360" height="220" viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t d">
+  <title id="t">Learning path illustration</title>
+  <desc id="d">Books, roadmap and growth chart representing structured learning.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="220" rx="20" fill="url(#g1)"/>
+  <rect x="20" y="36" width="130" height="148" rx="14" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+  <rect x="38" y="58" width="94" height="12" rx="6" fill="#93c5fd"/>
+  <rect x="38" y="82" width="76" height="10" rx="5" fill="#cbd5e1"/>
+  <rect x="38" y="102" width="88" height="10" rx="5" fill="#cbd5e1"/>
+  <rect x="38" y="122" width="64" height="10" rx="5" fill="#cbd5e1"/>
+  <path d="M180 160 C210 138, 236 120, 266 102 C286 90, 304 76, 328 60" stroke="#0f766e" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="180" cy="160" r="8" fill="#0f766e"/>
+  <circle cx="224" cy="130" r="8" fill="#0f766e"/>
+  <circle cx="266" cy="102" r="8" fill="#0f766e"/>
+  <circle cx="328" cy="60" r="10" fill="#1d4ed8"/>
+  <path d="M316 62l8 8 16-16" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

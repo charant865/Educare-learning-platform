@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses - Educare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Educare</div>
-            <ul>
+            <div class="logo"><a href="index.html" class="logo-link brand-logo"><img src="logo-educare-custom.svg" alt="EduCare logo" class="logo-brand"></a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="donation.html">Donate</a></li>
+                <li><a href="success-stories.html">Stories</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
             </ul>
@@ -20,53 +30,140 @@
     </header>
 
     <main>
-        <section class="courses">
-            <h2>All Courses</h2>
+        <section class="hero reveal">
+            <div class="hero-content">
+                <p class="eyebrow">Mentor Knowledge Hub</p>
+                <h1>Free Subject Courses From Class 6 to Post Graduation</h1>
+                <p class="hero-text">Learn Java, Python, Geography, Mathematics, Science, and more. Our mentors teach complete subject tracks from school foundations to advanced postgraduate preparation.</p>
+                <div class="hero-actions">
+                    <a href="#free-courses" class="btn btn-primary">Start Learning Free</a>
+                    <a href="donation.html" class="btn btn-secondary">Support Students</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>100%</strong><span>Free access</span></div>
+                    <div><strong>6th-PG</strong><span>All levels covered</span></div>
+                    <div><strong>120+</strong><span>Subject mentors</span></div>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <h3>This Week Subject Sessions</h3>
+                <ul>
+                    <li>Python Basics for Class 8-10</li>
+                    <li>Mathematics Problem Solving (11th-12th)</li>
+                    <li>Java and DSA for Degree Students</li>
+                </ul>
+                <a href="#free-courses" class="btn btn-panel">Join a Free Session</a>
+            </div>
+        </section>
+
+        <section class="options reveal">
+            <h2>How Mentors Help for Free</h2>
+            <div class="option-grid">
+                <article class="option-card">
+                    <h3>Live Community Classes</h3>
+                    <p>Mentors teach in live sessions and answer student questions directly.</p>
+                </article>
+                <article class="option-card">
+                    <h3>Career Guidance</h3>
+                    <p>Free guidance on internship, resume, and interview preparation.</p>
+                </article>
+                <article class="option-card">
+                    <h3>Abroad Study Support</h3>
+                    <p>Help with applications, scholarships, and language test strategy.</p>
+                </article>
+                <article class="option-card">
+                    <h3>Peer Mentoring</h3>
+                    <p>Senior students volunteer to support juniors in key subjects.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="free-courses" class="courses reveal">
+            <div class="section-head">
+                <h2>Free Subject Courses</h2>
+                <div class="course-filters" role="tablist" aria-label="Course filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="school">School (6th-10th)</button>
+                    <button class="filter-btn" data-filter="programming">Programming</button>
+                    <button class="filter-btn" data-filter="pg">UG/PG</button>
+                </div>
+            </div>
+
             <div class="course-list">
-                <div class="course-card">
-                    <img src="https://placehold.co/300x200" alt="Course Image">
-                    <h3>Course Title 1</h3>
-                    <p>Short description of the course.</p>
-                    <button>Enroll Now</button>
-                </div>
-                <div class="course-card">
-                    <img src="https://placehold.co/300x200" alt="Course Image">
-                    <h3>Course Title 2</h3>
-                    <p>Short description of the course.</p>
-                    <button>Enroll Now</button>
-                </div>
-                <div class="course-card">
-                    <img src="https://placehold.co/300x200" alt="Course Image">
-                    <h3>Course Title 3</h3>
-                    <p>Short description of the course.</p>
-                    <button>Enroll Now</button>
-                </div>
-                <div class="course-card">
-                    <img src="https://placehold.co/300x200" alt="Course Image">
-                    <h3>Course Title 4</h3>
-                    <p>Short description of the course.</p>
-                    <button>Enroll Now</button>
-                </div>
-                <div class="course-card">
-                    <img src="https://placehold.co/300x200" alt="Course Image">
-                    <h3>Course Title 5</h3>
-                    <p>Short description of the course.</p>
-                    <button>Enroll Now</button>
-                </div>
-                <div class="course-card">
-                    <img src="https://placehold.co/300x200" alt="Course Image">
-                    <h3>Course Title 6</h3>
-                    <p>Short description of the course.</p>
-                    <button>Enroll Now</button>
-                </div>
+                <article class="course-card" data-category="school">
+                    <img src="https://placehold.co/420x240/0f766e/ffffff?text=Mathematics" alt="Mathematics course">
+                    <h3>Mathematics Mastery (Class 6-10)</h3>
+                    <p>Strong foundation in arithmetic, algebra, geometry, and problem-solving skills.</p>
+                    <div class="course-meta"><span>Free</span><span>Class 6-10</span><span>Core Subject</span></div>
+                    <button>Join Free</button>
+                </article>
+
+                <article class="course-card" data-category="school">
+                    <img src="https://placehold.co/420x240/1e3a8a/ffffff?text=Geography" alt="Geography course">
+                    <h3>Geography Complete Course (Class 6-12)</h3>
+                    <p>Physical geography, maps, climate, population, and environment concepts.</p>
+                    <div class="course-meta"><span>Free</span><span>Class 6-12</span><span>Social Science</span></div>
+                    <button>Join Free</button>
+                </article>
+
+                <article class="course-card" data-category="programming">
+                    <img src="https://placehold.co/420x240/334155/ffffff?text=Python" alt="Python course">
+                    <h3>Python Programming (Beginner to Advanced)</h3>
+                    <p>Learn syntax, functions, OOP, projects, and real-world coding practice.</p>
+                    <div class="course-meta"><span>Free</span><span>Class 9-PG</span><span>Programming</span></div>
+                    <button>Join Free</button>
+                </article>
+
+                <article class="course-card" data-category="programming">
+                    <img src="https://placehold.co/420x240/0f172a/ffffff?text=Java" alt="Java course">
+                    <h3>Java and OOP Development Track</h3>
+                    <p>Master Java fundamentals, object-oriented programming, and mini applications.</p>
+                    <div class="course-meta"><span>Free</span><span>11th-PG</span><span>Programming</span></div>
+                    <button>Join Free</button>
+                </article>
+
+                <article class="course-card" data-category="school">
+                    <img src="https://placehold.co/420x240/166534/ffffff?text=Science" alt="Science course">
+                    <h3>General Science (Class 6-10)</h3>
+                    <p>Physics, chemistry, and biology basics taught with activity-based learning.</p>
+                    <div class="course-meta"><span>Free</span><span>Class 6-10</span><span>STEM</span></div>
+                    <button>Join Free</button>
+                </article>
+
+                <article class="course-card" data-category="pg">
+                    <img src="https://placehold.co/420x240/7c2d12/ffffff?text=Advanced+Maths" alt="Advanced mathematics course">
+                    <h3>Advanced Mathematics for UG/PG</h3>
+                    <p>Linear algebra, calculus, differential equations, and applied problem solving.</p>
+                    <div class="course-meta"><span>Free</span><span>UG/PG</span><span>Advanced</span></div>
+                    <button>Join Free</button>
+                </article>
+
+                <article class="course-card" data-category="pg">
+                    <img src="https://placehold.co/420x240/0c4a6e/ffffff?text=Research+Skills" alt="Research skills course">
+                    <h3>Research Methods and Academic Writing</h3>
+                    <p>Designed for post-graduation students working on dissertations and papers.</p>
+                    <div class="course-meta"><span>Free</span><span>Post Graduation</span><span>Research</span></div>
+                    <button>Join Free</button>
+                </article>
             </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Educare. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="success-stories.html">Success Stories</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+

@@ -1,0 +1,32 @@
+<svg width="420" height="160" viewBox="0 0 420 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cubeLeft" x1="64" y1="48" x2="64" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2994A"/>
+      <stop offset="1" stop-color="#E67E22"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="93" y1="48" x2="93" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#23272F"/>
+      <stop offset="1" stop-color="#101418"/>
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="78" y1="31" x2="78" y2="57" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6B7280"/>
+      <stop offset="1" stop-color="#374151"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(20 10)">
+    <path d="M78 20L113 38L78 56L43 38L78 20Z" fill="url(#cubeTop)"/>
+    <path d="M43 38L78 56V96L43 78V38Z" fill="url(#cubeLeft)"/>
+    <path d="M113 38L78 56V96L113 78V38Z" fill="url(#cubeRight)"/>
+    <path d="M52 45L78 58L104 45" stroke="#D1D5DB" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M78 56V96" stroke="#D1D5DB" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M40 78L28 84V104L40 98V78Z" fill="#F2994A"/>
+    <path d="M116 78L128 84V104L116 98V78Z" fill="#F2994A"/>
+  </g>
+
+  <g transform="translate(165 66)">
+    <text x="0" y="0" font-family="Manrope, Arial, sans-serif" font-size="38" font-weight="800" fill="#111827">Edu</text>
+    <text x="74" y="0" font-family="Manrope, Arial, sans-serif" font-size="38" font-weight="800" fill="#E67E22">Care</text>
+    <text x="2" y="28" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="2.1" fill="#9CA3AF">RISING FOR LEARNING</text>
+  </g>
+</svg>

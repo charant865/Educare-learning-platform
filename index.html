@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+
     <header>
         <nav>
-            <div class="logo">Educare</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="courses.html">Courses</a></li>
+            <div class="logo"><a href="index.html" class="logo-link brand-logo"><img src="logo-educare-custom.svg" alt="EduCare logo" class="logo-brand"></a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="courses.html">Learn</a></li>
+                <li><a href="donation.html">Donate</a></li>
+                <li><a href="success-stories.html">Stories</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
             </ul>
@@ -20,41 +34,320 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to Educare</h1>
-            <p>Your future starts here. Learn new skills from industry experts.</p>
-            <a href="courses.html"><button>Browse Courses</button></a>
+        <section class="hero reveal">
+            <div class="hero-content">
+                <p class="eyebrow hero-tag"><span>Learn</span><span>Support</span></p>
+                <h1>Free Quality Education for Economically Backward Students.</h1>
+                <p class="hero-text">Educare helps students who cannot afford expensive course fees outside. Top professors and teachers mentor students for free by sharing knowledge to build equal opportunities.</p>
+                <div class="hero-actions">
+                    <a href="courses.html" class="btn btn-primary">Learn</a>
+                    <a href="donation.html" class="btn btn-secondary">Donate</a>
+                </div>
+                <div class="hero-ribbon">
+                    <span>Live Mentor Classes</span>
+                    <span>Trusted Donations</span>
+                    <span>6th to PG Subjects</span>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>3,240+</strong><span>Students Learning</span></div>
+                    <div><strong>INR 58,000+</strong><span>Donations Raised</span></div>
+                    <div><strong>420+</strong><span>Students Supported</span></div>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <h3>Donation Raised Overview</h3>
+                <ul>
+                    <li>INR 24,000 - Higher education support</li>
+                    <li>INR 18,500 - Study abroad assistance</li>
+                    <li>INR 15,500 - Books and stationery</li>
+                </ul>
+                <a href="donation.html" class="btn btn-panel">Contribute Now</a>
+            </div>
         </section>
 
-        <section class="courses">
-            <h2>Our Courses</h2>
+        <section class="quick-cta reveal">
+            <a href="signup.html">Apply as Student</a>
+            <a href="teacher-apply.html">Become a Mentor</a>
+            <a href="donation.html">Support with Donation</a>
+        </section>
+
+        <section class="impact-strip reveal">
+            <div class="impact-item">
+                <span>Latest Update</span>
+                <strong>64 New donors joined this month</strong>
+            </div>
+            <div class="impact-item">
+                <span>Scholarships</span>
+                <strong>38 students moved to next semester</strong>
+            </div>
+            <div class="impact-item">
+                <span>Mentor Hours</span>
+                <strong>1,180 free mentoring hours delivered</strong>
+            </div>
+        </section>
+
+        <section class="visual-band reveal">
+            <article class="visual-card">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80" alt="Students learning together in a classroom" class="visual-media">
+                <h3>Smart Learning Paths</h3>
+                <p>Structured subject roadmap from Class 6 foundation to post-graduation specialization.</p>
+            </article>
+            <article class="visual-card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Mentor guiding students during study session" class="visual-media">
+                <h3>Goal-Based Mentoring</h3>
+                <p>Mentors guide students based on goals like exams, coding careers, and higher studies.</p>
+            </article>
+            <article class="visual-card">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" alt="Student planning academic progress and financial support" class="visual-media">
+                <h3>Transparent Student Aid</h3>
+                <p>Every donation is tracked and used for tuition, books, stationery, and education support.</p>
+            </article>
+        </section>
+
+        <section class="mission-flow reveal">
+            <div class="section-head">
+                <h2>What Educare Provides</h2>
+            </div>
+            <div class="flow-grid">
+                <article class="flow-card">
+                    <h3>Free Learning Support</h3>
+                    <p>Students get free courses, mock tests, free books, free resources, and scholarship guidance without paying high outside fees.</p>
+                </article>
+                <article class="flow-card">
+                    <h3>Merit Rewards</h3>
+                    <p>Students with strong performance and high scores receive credits, badges, and certifications from the platform.</p>
+                </article>
+                <article class="flow-card">
+                    <h3>Join as Teacher</h3>
+                    <p>Teachers can apply by sharing details. They start teaching only after admin approval to maintain quality and trust.</p>
+                </article>
+                <article class="flow-card">
+                    <h3>Teacher Growth</h3>
+                    <p>Best-performing teachers can also receive recognition and paid opportunities based on impact and student feedback.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="options options-contrast reveal">
+            <h2>How Donations Are Used</h2>
+            <div class="option-grid">
+                <article class="option-card impact-card">
+                    <h3>Tuition Support</h3>
+                    <p>Direct support for poor students to continue higher studies.</p>
+                    <div class="fund-progress"><span style="width:78%"></span></div>
+                    <small>Raised: INR 24,000 of INR 30,000</small>
+                </article>
+                <article class="option-card impact-card">
+                    <h3>Abroad Application Help</h3>
+                    <p>Financial support for exams, applications, and visa processing.</p>
+                    <div class="fund-progress"><span style="width:61%"></span></div>
+                    <small>Raised: INR 18,500 of INR 30,000</small>
+                </article>
+                <article class="option-card impact-card">
+                    <h3>Books & Stationery</h3>
+                    <p>Essential learning kits distributed for school and college students.</p>
+                    <div class="fund-progress"><span style="width:69%"></span></div>
+                    <small>Raised: INR 15,500 of INR 22,500</small>
+                </article>
+                <article class="option-card impact-card">
+                    <h3>Emergency Academic Fund</h3>
+                    <p>Immediate relief for students facing financial interruptions.</p>
+                    <div class="fund-progress"><span style="width:45%"></span></div>
+                    <small>Raised: INR 9,000 of INR 20,000</small>
+                </article>
+            </div>
+        </section>
+
+        <section class="courses reveal">
+            <div class="section-head">
+                <h2>New Free Courses</h2>
+                <div class="course-filters" role="tablist" aria-label="Course filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="school">School (6th-10th)</button>
+                    <button class="filter-btn" data-filter="programming">Programming</button>
+                    <button class="filter-btn" data-filter="pg">UG/PG</button>
+                </div>
+            </div>
+
             <div class="course-list">
-                <div class="course-card">
-                    <img src="https://placehold.co/300x200" alt="Course Image">
-                    <h3>Course Title 1</h3>
-                    <p>Short description of the course.</p>
-                    <button>Enroll Now</button>
+                <article class="course-card" data-category="school">
+                    <img src="https://placehold.co/420x240/0f766e/ffffff?text=Mathematics" alt="Mathematics course">
+                    <h3>Mathematics Foundation (Class 6-10)</h3>
+                    <p>Number systems, algebra, geometry, and practice worksheets for school learners.</p>
+                    <div class="course-meta"><span>Free</span><span>Class 6-10</span><span>Core</span></div>
+                    <button>Join Free</button>
+                </article>
+                <article class="course-card" data-category="school">
+                    <img src="https://placehold.co/420x240/1e3a8a/ffffff?text=Geography" alt="Geography course">
+                    <h3>Geography Master Class (Class 6-12)</h3>
+                    <p>Maps, climate, natural resources, and world geography concepts simplified.</p>
+                    <div class="course-meta"><span>Free</span><span>Class 6-12</span><span>Social Science</span></div>
+                    <button>Join Free</button>
+                </article>
+                <article class="course-card" data-category="programming">
+                    <img src="https://placehold.co/420x240/334155/ffffff?text=Python" alt="Python course">
+                    <h3>Python Programming Track</h3>
+                    <p>From basics to problem solving and mini projects for high school to PG students.</p>
+                    <div class="course-meta"><span>Free</span><span>Class 9-PG</span><span>Programming</span></div>
+                    <button>Join Free</button>
+                </article>
+                <article class="course-card" data-category="programming">
+                    <img src="https://placehold.co/420x240/14532d/ffffff?text=Java" alt="Java course">
+                    <h3>Java Development Essentials</h3>
+                    <p>Core Java, OOP concepts, and coding practice for intermediate and degree students.</p>
+                    <div class="course-meta"><span>Free</span><span>11th-PG</span><span>Programming</span></div>
+                    <button>Join Free</button>
+                </article>
+                <article class="course-card" data-category="pg">
+                    <img src="https://placehold.co/420x240/7c2d12/ffffff?text=Advanced+Maths" alt="Advanced mathematics course">
+                    <h3>Advanced Mathematics (UG/PG)</h3>
+                    <p>Calculus, linear algebra, and applied mathematics for college and post-grad learners.</p>
+                    <div class="course-meta"><span>Free</span><span>UG/PG</span><span>Advanced</span></div>
+                    <button>Join Free</button>
+                </article>
+                <article class="course-card" data-category="pg">
+                    <img src="https://placehold.co/420x240/0c4a6e/ffffff?text=Research" alt="Research course">
+                    <h3>Research and Academic Writing (PG)</h3>
+                    <p>Thesis planning, paper structure, references, and research methodology.</p>
+                    <div class="course-meta"><span>Free</span><span>Post Graduation</span><span>Research</span></div>
+                    <button>Join Free</button>
+                </article>
+            </div>
+        </section>
+
+        <section class="options reveal">
+            <div class="section-head">
+                <h2>Top Mentors</h2>
+                <a href="courses.html" class="mini-link">View all mentors</a>
+            </div>
+            <div class="mentor-grid">
+                <article class="mentor-card">
+                    <div class="mentor-avatar">PN</div>
+                    <h3>Dr. Priya Nair</h3>
+                    <p>Higher studies mentor with 12+ years in academic counseling.</p>
+                    <span>Rating 4.9</span>
+                </article>
+                <article class="mentor-card">
+                    <div class="mentor-avatar">RV</div>
+                    <h3>Rahul Verma</h3>
+                    <p>Software engineer mentoring students in coding and placements.</p>
+                    <span>Rating 4.8</span>
+                </article>
+                <article class="mentor-card">
+                    <div class="mentor-avatar">SJ</div>
+                    <h3>Sarah Joseph</h3>
+                    <p>Study abroad mentor focused on scholarships and visa planning.</p>
+                    <span>Rating 4.9</span>
+                </article>
+                <article class="mentor-card">
+                    <div class="mentor-avatar">AR</div>
+                    <h3>Arjun Reddy</h3>
+                    <p>Communication coach supporting interview and speaking confidence.</p>
+                    <span>Rating 4.7</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="how-it-works reveal">
+            <div class="section-head">
+                <h2>How Educare Works</h2>
+            </div>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span>Step 1</span>
+                    <h3>Join the Platform</h3>
+                    <p>Students sign up and choose free learning tracks. Teachers apply to mentor based on their subject expertise.</p>
+                </article>
+                <article class="step-card">
+                    <span>Step 2</span>
+                    <h3>Learn with Mentors</h3>
+                    <p>Live sessions, guided practice, and course pathways help learners build strong foundations from school to PG levels.</p>
+                </article>
+                <article class="step-card">
+                    <span>Step 3</span>
+                    <h3>Receive Academic Support</h3>
+                    <p>Community donations are directed to tuition, books, and education milestones for students needing financial help.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials reveal">
+            <div class="section-head">
+                <h2>Voices from Our Community</h2>
+                <a href="success-stories.html" class="mini-link">Read all stories</a>
+            </div>
+            <div class="testimonial-slider" aria-label="Testimonials slider">
+                <button class="slider-btn" data-slide-dir="prev" aria-label="Previous testimonial">&#8249;</button>
+                <div class="testimonial-viewport">
+                    <div class="testimonial-track">
+                        <article class="testimonial-card">
+                            <p>"I almost stopped my studies after 12th. Educare mentors guided me into a degree program and scholarship support."</p>
+                            <h3>Ananya, Student</h3>
+                        </article>
+                        <article class="testimonial-card">
+                            <p>"The transparency in donation usage made me trust this mission. I can clearly see where every rupee is helping."</p>
+                            <h3>Ramesh, Donor</h3>
+                        </article>
+                        <article class="testimonial-card">
+                            <p>"Teaching here is meaningful. Students are serious, and the admin review process keeps the platform quality high."</p>
+                            <h3>Dr. Priya Nair, Mentor</h3>
+                        </article>
+                    </div>
                 </div>
-                <div class="course-card">
-                    <img src="https://placehold.co/300x200" alt="Course Image">
-                    <h3>Course Title 2</h3>
-                    <p>Short description of the course.</p>
-                    <button>Enroll Now</button>
-                </div>
-                <div class="course-card">
-                    <img src="https://placehold.co/300x200" alt="Course Image">
-                    <h3>Course Title 3</h3>
-                    <p>Short description of the course.</p>
-                    <button>Enroll Now</button>
-                </div>
+                <button class="slider-btn" data-slide-dir="next" aria-label="Next testimonial">&#8250;</button>
+            </div>
+            <div class="slider-dots" aria-label="Testimonial slide indicators">
+                <button class="slider-dot active" data-slide-to="0" aria-label="Go to testimonial 1"></button>
+                <button class="slider-dot" data-slide-to="1" aria-label="Go to testimonial 2"></button>
+                <button class="slider-dot" data-slide-to="2" aria-label="Go to testimonial 3"></button>
+            </div>
+        </section>
+
+        <section id="about-us" class="about-wrap about-modern reveal">
+            <div class="about-panel">
+                <p class="eyebrow">About Us</p>
+                <h2>Education Should Not Stop Because of Money</h2>
+                <p>Educare is a learning and donation platform helping students continue education through free mentor-led classes and community funding. We believe that financial limitations should never stop a student from learning, growing, and achieving their academic goals.</p>
+                <p>Our platform provides free learning tracks from Class 6 to post-graduation, supported by experienced mentors across subjects like Mathematics, Geography, Java, Python, and more. Every donation is used transparently to support tuition, books, stationery, and higher-study opportunities, including abroad education support for deserving students.</p>
+                <a href="donation.html" class="btn btn-primary">Be Part of the Mission</a>
+            </div>
+            <div class="about-highlight">
+                <h3>2026 Impact Snapshot</h3>
+                <div class="about-stat"><strong>420+</strong><span>Students funded</span></div>
+                <div class="about-stat"><strong>80+</strong><span>Mentors volunteering</span></div>
+                <div class="about-stat"><strong>1,180</strong><span>Hours of mentoring</span></div>
+                <div class="about-stat"><strong>92%</strong><span>Course completion rate</span></div>
+            </div>
+        </section>
+
+        <section class="join-banner reveal">
+            <div class="join-left">
+                <h2>Build Futures With Educare</h2>
+                <p>Learn free with mentors, support financially challenged students, and become part of a meaningful education movement.</p>
+            </div>
+            <div class="join-actions">
+                <a href="signup.html" class="btn btn-primary">Join as Student</a>
+                <a href="teacher-apply.html" class="btn btn-secondary">Join as Teacher</a>
             </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Educare. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="success-stories.html">Success Stories</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+

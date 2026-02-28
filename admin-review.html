@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Review - Educare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link brand-logo"><img src="logo-educare-custom.svg" alt="EduCare logo" class="logo-brand"></a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Learn</a></li>
+                <li><a href="donation.html">Donate</a></li>
+                <li><a href="success-stories.html">Stories</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="teacher-apply.html">Teach</a></li>
+                <li><a href="admin-review.html" class="active">Admin</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-head reveal">
+            <p class="eyebrow">Admin Panel</p>
+            <h1>Teacher Application Review</h1>
+            <p class="hero-text">Approve qualified teachers and reject incomplete or invalid applications. This demo panel updates status instantly on click.</p>
+        </section>
+
+        <section class="admin-grid reveal">
+            <article class="admin-card" data-applicant="Priya Sharma">
+                <h3>Priya Sharma</h3>
+                <p><strong>Subject:</strong> Mathematics</p>
+                <p><strong>Qualification:</strong> M.Sc Mathematics</p>
+                <p><strong>Experience:</strong> 6 years</p>
+                <p class="admin-status pending">Status: Pending Review</p>
+                <div class="admin-actions">
+                    <button class="admin-action approve-btn" data-action="approve">Approve</button>
+                    <button class="admin-action reject-btn" data-action="reject">Reject</button>
+                </div>
+            </article>
+
+            <article class="admin-card" data-applicant="Rahul Kumar">
+                <h3>Rahul Kumar</h3>
+                <p><strong>Subject:</strong> Python</p>
+                <p><strong>Qualification:</strong> B.Tech CSE</p>
+                <p><strong>Experience:</strong> 4 years</p>
+                <p class="admin-status pending">Status: Pending Review</p>
+                <div class="admin-actions">
+                    <button class="admin-action approve-btn" data-action="approve">Approve</button>
+                    <button class="admin-action reject-btn" data-action="reject">Reject</button>
+                </div>
+            </article>
+
+            <article class="admin-card" data-applicant="Sarah Joseph">
+                <h3>Sarah Joseph</h3>
+                <p><strong>Subject:</strong> Geography</p>
+                <p><strong>Qualification:</strong> M.A Geography</p>
+                <p><strong>Experience:</strong> 8 years</p>
+                <p class="admin-status pending">Status: Pending Review</p>
+                <div class="admin-actions">
+                    <button class="admin-action approve-btn" data-action="approve">Approve</button>
+                    <button class="admin-action reject-btn" data-action="reject">Reject</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Educare. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="success-stories.html">Success Stories</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Educare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link brand-logo"><img src="logo-educare-custom.svg" alt="EduCare logo" class="logo-brand"></a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Learn</a></li>
+                <li><a href="donation.html">Donate</a></li>
+                <li><a href="success-stories.html">Stories</a></li>
+                <li><a href="faqs.html" class="active">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="faq-hero reveal">
+            <p class="eyebrow">FAQs</p>
+            <h1>Frequently Asked Questions</h1>
+            <p class="hero-text">Answers for students, mentors, and donors about how Educare works.</p>
+        </section>
+
+        <section class="faq-grid reveal">
+            <article class="faq-card">
+                <h2>Is learning really free for students?</h2>
+                <p>Yes. Students can access free mentor-led sessions and learning tracks without paying platform fees.</p>
+            </article>
+            <article class="faq-card">
+                <h2>How can I apply as a teacher?</h2>
+                <p>Go to the Teach page, submit your profile, and wait for admin verification before approval.</p>
+            </article>
+            <article class="faq-card">
+                <h2>How are donations used?</h2>
+                <p>Donations are directed to tuition support, books, stationery, and higher-study assistance for eligible students.</p>
+            </article>
+            <article class="faq-card">
+                <h2>Can donors choose a donation purpose?</h2>
+                <p>Yes. The donation form allows selecting categories such as higher education, abroad studies, and books.</p>
+            </article>
+            <article class="faq-card">
+                <h2>Do students get certificates?</h2>
+                <p>Merit-based recognition and completion certificates can be provided based on course performance.</p>
+            </article>
+            <article class="faq-card">
+                <h2>Who can I contact for support?</h2>
+                <p>Use the signup/login flow and teacher application channels; a dedicated contact page can be added next.</p>
+            </article>
+        </section>
+
+        <section class="faq-ask reveal">
+            <h2>Still Have a Question?</h2>
+            <p>Write your question below. Our team can review and add it to the FAQ section.</p>
+            <form class="faq-question-form">
+                <input type="text" id="faqName" placeholder="Your Name" required>
+                <input type="email" id="faqEmail" placeholder="Your Email" required>
+                <textarea id="faqQuestion" rows="5" placeholder="Write your question here..." required></textarea>
+                <button type="submit" class="btn btn-primary">Send Question</button>
+            </form>
+            <div class="faq-user-questions">
+                <h3>Recent User Questions (Demo)</h3>
+                <ul id="faqUserQuestionList">
+                    <li class="empty">No questions yet. Be the first to ask.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Educare. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="success-stories.html">Success Stories</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

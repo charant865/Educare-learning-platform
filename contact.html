@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Educare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" class="logo-link brand-logo"><img src="logo-educare-custom.svg" alt="EduCare logo" class="logo-brand"></a></div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Learn</a></li>
+                <li><a href="donation.html">Donate</a></li>
+                <li><a href="success-stories.html">Stories</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero reveal">
+            <p class="eyebrow">Contact Us</p>
+            <h1>We Are Here to Help Students, Mentors, and Donors</h1>
+            <p class="hero-text">Reach out for support, partnerships, mentorship, or donation-related questions. We usually respond within 24-48 hours.</p>
+        </section>
+
+        <section class="contact-grid reveal">
+            <article class="contact-card">
+                <h2>Send a Message</h2>
+                <form class="contact-form">
+                    <input type="text" id="contactName" placeholder="Full Name" required>
+                    <input type="email" id="contactEmail" placeholder="Email Address" required>
+                    <select id="contactTopic" required>
+                        <option value="">Choose Topic</option>
+                        <option value="Student Support">Student Support</option>
+                        <option value="Teacher Application">Teacher Application</option>
+                        <option value="Donation Query">Donation Query</option>
+                        <option value="Partnership">Partnership</option>
+                    </select>
+                    <textarea id="contactMessage" rows="5" placeholder="Write your message..." required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </article>
+
+            <article class="contact-card contact-info">
+                <h2>Support Channels</h2>
+                <p><strong>Email:</strong> support@educare.org</p>
+                <p><strong>Phone:</strong> +91 90000 12345</p>
+                <p><strong>Hours:</strong> Mon-Sat, 9:00 AM - 7:00 PM</p>
+                <div class="contact-map">
+                    <p>Community Support Center</p>
+                    <small>Hyderabad, India (Demo Location)</small>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Educare. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="success-stories.html">Success Stories</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
